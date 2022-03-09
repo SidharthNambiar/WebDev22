@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form Demo</h1>
+    <form action="https://www.google.com/search">
+      <button type="button">Does not Submit</button>
+      <div>
+        <label for="username">Search Google </label>
+        <input id="username" type="text" placeholder="username" name="q" />
+        <button>Search</button>
+      </div>
+
+      <div>
+        <label for="password"
+          >Enter password:
+          <input
+            id="password"
+            type="password"
+            placeholder="password"
+            name="passWord"
+           required/>
+        </label>
+      </div>
+      <button>In the Middle does submit</button>
+
+      <div>
+        <label for="color">Select Color:</label>
+        <input type="color" id="color" name="color" />
+      </div>
+
+      <div>
+        <label for="number">Pick a Number:</label>
+        <input type="number" id="number" name="num" min="100" max="500" />
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+    <button>Won't submit</button>
+
+    <h2>More Inputs</h2>
+
+    <form action="/birds">
+      <label for="agreement">I agree</label>
+      <input type="checkbox" name="agreed" id="agreement" checked />
+
+      <div>
+        <label for="small">S</label>
+        <input type="radio" name="size" value="small" id="small" />
+        <label for="large">L</label>
+
+        <input type="radio" name="size" value="large" id="large" checked />
+        <label for="xlarge">XL</label>
+
+        <input type="radio" name="size" value="xlarge" id="xlarge" />
+      </div>
+
+      <div>
+        <label for="entree">Select Meal Type</label>
+        <select name="meal" id="entree">
+          <option value="veg">Vegeterian</option>
+          <option value="non-veg" selected>Non-Vegeterian</option>
+          <option value="vegan">Vegan</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="donation">pick donation amount</label>
+        <input type="range" name="amount" id="donation" min="5" max="100" />
+      </div>
+
+      <div>
+        <label for="request">Enter request</label>
+        <textarea
+          name="request"
+          id="request"
+          cols="50"
+          rows="15"
+          placeholder="Enter you request here"
+          required
+        ></textarea>
+      </div>
+      <button>Submit Agreement</button>
+    </form>
+  </body>
+</html>
