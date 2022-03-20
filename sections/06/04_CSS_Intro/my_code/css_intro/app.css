@@ -1,0 +1,18 @@
+h3 {
+    color: green;
+    background-color: rgb(123,45,188);
+}
+
+button {
+    color: magenta;
+    background-color: papayawhip;
+}
+
+p {
+    color: olive;
+    background-color: #abc;
+}
+
+body {
+    background-color: #000;
+}

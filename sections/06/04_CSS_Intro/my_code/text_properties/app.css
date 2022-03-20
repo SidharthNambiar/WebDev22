@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    /* width: 50%; */
+    font-weight: normal;
+    text-decoration: red underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: fantasy, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+} 
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
