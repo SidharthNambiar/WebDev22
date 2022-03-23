@@ -1,3 +1,72 @@
+
+body{
+    margin: 0;
+    /* display: none; */
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    padding: 50px;
+    margin: 10px;
+}
+
+h1{
+    background-color: pink;
+    padding-left: 100px;
+}
+
+#one {
+    background-color: red;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+#two{
+    background-color: green;
+    /* box-sizing: border-box; */
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#three{
+    background-color: blue;
+    border: 5px solid black;
+    /* border-left-width: 10px; */
+    border-radius: 10px;
+    
+}
+
+button{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
     margin: 0;
 }
@@ -23,7 +92,7 @@ h1 {
     border-width: 5px;
     border-color: black; 
     border-style: solid;
-    /* box-sizing: border-box; */
+    
     margin-left: 50px;
     margin-bottom: 100px;
 }
@@ -49,3 +118,5 @@ h1 {
 button {
     padding: 10px 20px 30px 40px;
 }
+
+*/
