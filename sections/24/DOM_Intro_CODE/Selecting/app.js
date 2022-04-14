@@ -1,10 +1,24 @@
 
 
 
+const allImages = document.getElementsByTagName("img")
+
+// for (let image of allImages) {
+//     image.src = "https://i.ytimg.com/vi/s7B7KQLi_Z8/maxresdefault.jpg"
+// }
 
 
+const squareImages = document.getElementsByClassName("square");
 
+// for (let image of squareImages) {
+//     image.src = null;
+// }
 
+const links = document.querySelectorAll('p a');
+
+// for (let link of links) {
+//     console.dir(link.href)
+// }
 
 
 
