@@ -1,3 +1,4 @@
+console.log('connected')
 const input = document.querySelector('input');
 const h1 = document.querySelector('h1');
 

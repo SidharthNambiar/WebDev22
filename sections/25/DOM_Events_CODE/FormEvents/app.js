@@ -18,8 +18,8 @@ const addTweet = (username, tweet) => {
     const newTweet = document.createElement('li');
     const bTag = document.createElement('b');
     bTag.append(username)
-    newTweet.append(bTag);
-    newTweet.append(`- ${tweet}`)
+    newTweet.append(bTag, `- ${tweet}`);
+    // newTweet.append()
     tweetsContainer.append(newTweet);
 }
 

@@ -20,3 +20,4 @@ function colorize() {
     this.style.backgroundColor = makeRandColor();
     this.style.color = makeRandColor();
 }
+
