@@ -9,11 +9,11 @@ btnPlayerOne.disabled = true;
 btnPlayerTwo.disabled = true;
 
 btnPlayerOne.addEventListener("click", () => {
-  updatePlayerOneScore();
+  updateScore(spanPlayerOne);
 });
 
 btnPlayerTwo.addEventListener("click", () => {
-  updatePlayerTwoScore();
+  updateScore(spanPlayerTwo);
 });
 
 btnReset.addEventListener("click", () => {
@@ -28,33 +28,25 @@ scoreLimit.addEventListener("change", () => {
   }
 });
 
-function updatePlayerOneScore() {
-  let currentScore = parseInt(spanPlayerOne.innerText);
+function updateScore(player) {
+  let currentScore = parseInt(player.innerText);
   let updateScore = currentScore + 1;
-  spanPlayerOne.innerText = updateScore;
-
-  if (didPlayerWin(updateScore)) {
-    spanPlayerOne.style.color = "green";
-    spanPlayerTwo.style.color = "red";
-  }
+  player.innerText = updateScore;
+  didPlayerWin(updateScore, player);
 }
 
-function updatePlayerTwoScore() {
-  let currentScore = parseInt(spanPlayerTwo.innerText);
-  let updateScore = currentScore + 1;
-  spanPlayerTwo.innerText = updateScore;
-
-  if (didPlayerWin(updateScore)) {
-    spanPlayerOne.style.color = "red";
-    spanPlayerTwo.style.color = "green";
-  }
-}
-
-function didPlayerWin(playerScore) {
+function didPlayerWin(playerScore, player) {
   let winningScore = parseInt(scoreLimit.value);
   if (playerScore === winningScore) {
     btnPlayerOne.disabled = true;
     btnPlayerTwo.disabled = true;
+    player.style.color = "green";
+
+    if (player.id === "playerOneScore") {
+      spanPlayerTwo.style.color = "red";
+    } else {
+      spanPlayerOne.style.color = "red";
+    }
     return true;
   }
   return false;
