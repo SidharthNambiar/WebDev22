@@ -18,27 +18,40 @@
 // }, 1000)
 
 
-const delayedColorChange = (newColor, delay, doNext) => {
+const delayedColorChange = (newColor, delay) => {
     setTimeout(() => {
+        console.log(newColor, delay)
         document.body.style.backgroundColor = newColor;
-        doNext && doNext();
+        // doNext && doNext();
     }, delay)
 }
 
+
+
+
 // STILL A LOT OF NESTING!!!
-delayedColorChange('red', 1000, () => {
-    delayedColorChange('orange', 1000, () => {
-        delayedColorChange('yellow', 1000, () => {
-            delayedColorChange('green', 1000, () => {
-                delayedColorChange('blue', 1000, () => {
+// delayedColorChange('red', 1000, () => {
+//     delayedColorChange('orange', 1000, () => {
+//         delayedColorChange('yellow', 1000, () => {
+//             delayedColorChange('green', 1000, () => {
+//                 delayedColorChange('blue', 1000, () => {
 
-                })
-            })
-        })
-    })
-});
+//                 })
+//             })
+//         })
+//     })
+// });
+
+  
+     
+  
+       
+       
+  
+   
 
 
+// document.body.style.backgroundColor = 'rgb(0,0,255)'
 // searchMoviesAPI('amadeus', () => {
 //     saveToMyDB(movies, () => {
 //         //if it works, run this:
