@@ -18,10 +18,11 @@ const fakeRequestPromise = (url) => {
                 reject('Connection Timeout :(')
             } else {
                 resolve(`Here is your fake data from ${url}`)
-            }
+            }  
         }, delay)
     })
 }
+
 
 
 // fakeRequestCallback('books.com/page1',
